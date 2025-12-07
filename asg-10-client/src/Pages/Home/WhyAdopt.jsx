@@ -6,7 +6,7 @@ const WhyAdopt = () => {
       <div className="hero-content flex-col flex lg:flex-row">
         <img
           src="https://images.pexels.com/photos/326012/pexels-photo-326012.jpeg?_gl=1*qf6kci*_ga*MTkxNjc2NjI4My4xNzY1MDQ5Mzc5*_ga_8JE65Q40S6*czE3NjUwNjMxMjMkbzQkZzEkdDE3NjUwNjQ2NTYkajMzJGwwJGgw"
-          className="max-w-md rounded-md shadow-xl mr-0 lg:mr-5"
+          className="w-[35%] max-w-3/4 rounded-md shadow-xl mr-0 lg:mr-5"
         />
         <div className="">
           <h2 className="text-4xl font-bold">Why Adopt from PawMart?</h2>
