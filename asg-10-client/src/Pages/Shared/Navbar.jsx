@@ -3,6 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Context/AuthProvider.jsx";
 import toast from "react-hot-toast";
 
+
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
@@ -95,8 +96,14 @@ const Navbar = () => {
                 {user ? navLinksAfterLogin : navLinksBeforeLogin}
               </ul>
             </div>
-            <Link to="/" className="btn btn-ghost text-xl">
-              🐾 PawMart
+            <Link to="/" className="text-xl text-dark font-bold">
+              <div className="flex items-center gap-1 ">
+                <img className="w-10 " src="./logo.png" alt="" />
+                <h2 className="text-xl font-bold text-shadow-xs">
+                  PawMart
+                  <span className="text-primary"> Kitchen</span>
+                </h2>
+              </div>
             </Link>
           </div>
           <div className="navbar-center hidden lg:flex">

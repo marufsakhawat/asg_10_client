@@ -2,7 +2,7 @@ import React from "react";
 
 const PetHeroes = () => {
   return (
-    <div className="mb-16 w-11/12 mx-auto">
+    <div className="mb-32 w-11/12 mx-auto">
       <div className="text-center mb-8">
         <h2 className="text-4xl font-bold mb-2">Meet Our Pet Heroes</h2>
         <p className="text-gray-600 mb-5 lg:mb-15">

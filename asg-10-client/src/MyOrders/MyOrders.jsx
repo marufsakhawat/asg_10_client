@@ -71,7 +71,7 @@ const MyOrders = () => {
   }
 
   return (
-    <div className="min-h-[calc(100vh-349px)]">
+    <div className="min-h-[calc(100vh-349px)] w-11/12 mx-auto">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-3xl font-bold">My Orders ({myOrders.length})</h2>
         <button

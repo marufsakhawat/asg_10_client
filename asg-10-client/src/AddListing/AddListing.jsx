@@ -108,7 +108,7 @@ const AddListing = () => {
             />
           </div>
 
-          <div className="form-control md:col-span-2">
+          <div className="form-control">
             <label className="label">
               <span className="label-text">Image (URL)</span>
             </label>
@@ -146,7 +146,7 @@ const AddListing = () => {
             />
           </div>
 
-          <div className="form-control md:col-span-2">
+          <div className="form-control">
             <label className="label">
               <span className="label-text">Description</span>
             </label>
@@ -160,7 +160,7 @@ const AddListing = () => {
         </div>
 
         <div className="form-control mt-8">
-          <button type="submit" className="btn btn-primary btn-block">
+          <button type="submit" className="btn btn-error text-white btn-block">
             Add Listing
           </button>
         </div>
