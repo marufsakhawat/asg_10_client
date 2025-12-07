@@ -18,18 +18,11 @@ export const router = createBrowserRouter([
     path: "/",
     element: <MainLayout />,
     children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/register",
-        element: <Register />,
-      },
+      { path: "/", element: <Home /> },
+
+      { path: "/login", element: <Login /> },
+      { path: "/register", element: <Register /> },
+
       {
         path: "/add-listing",
         element: (
@@ -38,10 +31,9 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
-      {
-        path: "/pets-and-supplies",
-        element: <PetsAndSupplies />,
-      },
+
+      { path: "/pets-and-supplies", element: <PetsAndSupplies /> },
+
       {
         path: "/listing/:id",
         element: (
@@ -50,6 +42,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+
       {
         path: "/my-listings",
         element: (
@@ -58,6 +51,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+
       {
         path: "/update-listing/:id",
         element: (
@@ -66,6 +60,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+
       {
         path: "/my-orders",
         element: (
@@ -74,14 +69,17 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
-      {
-        path: "*",
-        element: <ErrorPage />,
-      },
+
       {
         path: "/category-filtered-product/:categoryName",
         element: <CategoryFilteredPage />,
       },
     ],
+  },
+
+  // 🔥 404 page OUTSIDE MainLayout — so NO Navbar/Footer here
+  {
+    path: "*",
+    element: <ErrorPage />,
   },
 ]);
