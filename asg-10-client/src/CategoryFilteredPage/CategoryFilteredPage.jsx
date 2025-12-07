@@ -36,7 +36,7 @@ const CategoryFilteredPage = () => {
   }
 
   return (
-    <div className="mb-16 min-h-[calc(100vh-349px)]">
+    <div className="mb-16 w-11/12 mx-auto min-h-[calc(100vh-349px)]">
       <div className="text-center mb-8">
         <h2 className="text-4xl font-bold mb-2">
           Showing Results for: {categoryName}
