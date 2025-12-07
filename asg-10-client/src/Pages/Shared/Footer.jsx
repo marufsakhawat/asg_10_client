@@ -63,7 +63,6 @@ const Footer = () => {
           </aside>
         </div>
       
-      
     </footer>
   );
 };
