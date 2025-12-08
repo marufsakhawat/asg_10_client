@@ -8,7 +8,7 @@ const RecentListings = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch("http://localhost:5000/listings-recent")
+    fetch("https://asg-10-server.vercel.app/listings-recent")
       .then((res) => res.json())
       .then((data) => {
         setListings(data);

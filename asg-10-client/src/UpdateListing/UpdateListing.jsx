@@ -14,7 +14,7 @@ const UpdateListing = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`http://localhost:5000/listing/${id}`)
+    fetch(`https://asg-10-server.vercel.app/listing/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setListing(data);
@@ -48,7 +48,7 @@ const UpdateListing = () => {
       date,
     };
 
-    fetch(`http://localhost:5000/listing/${id}`, {
+    fetch(`https://asg-10-server.vercel.app/listing/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

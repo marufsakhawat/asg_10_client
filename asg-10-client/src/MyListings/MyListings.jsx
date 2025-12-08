@@ -13,7 +13,7 @@ const MyListings = () => {
 
   const fetchMyListings = () => {
     setLoading(true);
-    fetch(`http://localhost:5000/my-listings/${user.email}`)
+    fetch(`https://asg-10-server.vercel.app/my-listings/${user.email}`)
       .then((res) => res.json())
       .then((data) => {
         setMyListings(data);
@@ -42,7 +42,7 @@ const MyListings = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/listing/${id}`, {
+        fetch(`https://asg-10-server.vercel.app/listing/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

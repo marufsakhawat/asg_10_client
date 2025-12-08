@@ -13,7 +13,7 @@ const MyOrders = () => {
   useEffect(() => {
     if (user?.email) {
       setLoading(true);
-      fetch(`http://localhost:5000/my-orders/${user.email}`)
+      fetch(`https://asg-10-server.vercel.app/my-orders/${user.email}`)
         .then((res) => res.json())
         .then((data) => {
           setMyOrders(data);

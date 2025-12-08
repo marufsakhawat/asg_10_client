@@ -31,7 +31,7 @@ const AddListing = () => {
       email,
     };
 
-    fetch("http://localhost:5000/listings", {
+    fetch("https://asg-10-server.vercel.app/listings", {
       method: "POST",
       headers: {
         "content-type": "application/json",
